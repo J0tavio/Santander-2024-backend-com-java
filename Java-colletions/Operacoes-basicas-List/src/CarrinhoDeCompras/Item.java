@@ -22,4 +22,10 @@ public class Item {
     public int getQuantidade() {
         return quantidade;
     }
+
+    @Override
+    public String toString() {
+        return "Item\n" +
+                "nome: " + nome + ", preco: " + preco + ", quantidade: " + quantidade;
+    }
 }

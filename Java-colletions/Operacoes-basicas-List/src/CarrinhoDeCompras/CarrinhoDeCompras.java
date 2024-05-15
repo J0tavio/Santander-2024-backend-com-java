@@ -25,15 +25,29 @@ public class CarrinhoDeCompras {
     }
 
     public double calcularValorTotal() {
-        List<Item> itemCarrinhoParaCalcular = new ArrayList<>();
+        double valorTotal = 0;
         for (Item i : itemCarrinho) {
-
+            double valorItem = i.getPreco() * i.getQuantidade();
+            valorTotal += valorItem;
         }
+        return valorTotal;
     }
 
     public void exibirItens() {
-
+        System.out.println(this.itemCarrinho);
     }
 
+    public static void main(String[] args) {
+        CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
+
+        carrinhoDeCompras.adicionarItem("peixe", 2, 5);
+        carrinhoDeCompras.adicionarItem("peixe", 2, 2);
+        carrinhoDeCompras.adicionarItem("Queijo", 4, 2);
+        carrinhoDeCompras.adicionarItem("Calango", 4, 7);
+        carrinhoDeCompras.exibirItens();
+        carrinhoDeCompras.removerItem("calango");
+        carrinhoDeCompras.exibirItens();
+        System.out.println("Valor total das compras: " + carrinhoDeCompras.calcularValorTotal());
+    }
 
 }
