@@ -1,4 +1,4 @@
-package AtividadesList.SomaNumeros;
+package AtividadesList.Pesquisa.SomaNumeros;
 
 import java.util.ArrayList;
 import java.util.List;
