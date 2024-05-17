@@ -85,6 +85,7 @@ public class ListaTarefas {
 
         listaTarefas.adicionarTarefa("Jogar lixo");
         listaTarefas.adicionarTarefa("Estudar");
+        listaTarefas.adicionarTarefa("Estudar");
         listaTarefas.adicionarTarefa("Academia");
         listaTarefas.adicionarTarefa("Lavar os pratos");
         listaTarefas.adicionarTarefa("Passear com o cachorro");
