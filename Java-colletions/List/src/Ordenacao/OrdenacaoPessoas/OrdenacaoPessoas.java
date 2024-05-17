@@ -1,4 +1,4 @@
-package AtividadesList.Ordenacao.OrdenacaoPessoas;
+package Ordenacao.OrdenacaoPessoas;
 
 import java.util.*;
 

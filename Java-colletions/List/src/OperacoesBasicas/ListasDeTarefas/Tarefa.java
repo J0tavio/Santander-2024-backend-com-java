@@ -1,4 +1,4 @@
-package AtividadesList.OperacoesBasicas.ListasDeTarefas;
+package OperacoesBasicas.ListasDeTarefas;
 
 public class Tarefa {
     private String descricao;
