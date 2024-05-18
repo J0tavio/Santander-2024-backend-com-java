@@ -45,6 +45,7 @@ public class GerenciadorAlunos {
         GerenciadorAlunos aluno = new GerenciadorAlunos();
 
         aluno.adicionarAluno("João", 4, 7.5);
+        aluno.adicionarAluno("João Pedro", 10, 8);
         aluno.adicionarAluno("Maria", 5, 8.5);
         aluno.adicionarAluno("Carlos", 6, 10);
         aluno.adicionarAluno("Roberto", 7, 7.5);
@@ -52,6 +53,7 @@ public class GerenciadorAlunos {
 
         System.out.println(aluno.exibirAlunosPorNome());
         System.out.println(aluno.exibirAlunosPorNota());
+
 
         aluno.removerAluno(6);
 
