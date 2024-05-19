@@ -66,17 +66,17 @@ public class EstoqueProdutos {
     }
 
     public Produto obterProdutoMaiorQuantidadeValorTotalNoEstoque() {
-        Produto produtoMaiorQuantidadeValor = null;
-        double maiorQuantidadeValor = 0d;
+        Produto produtoMaiorQuantidadeValorEstoque = null;
+        double maiorValorTotalProdutoEstoque = 0d;
         if (!this.produtoMap.isEmpty()) {
             for (Map.Entry<Long, Produto> entry : this.produtoMap.entrySet()) {
                 double valorProdutoEmEstoque = entry.getValue().getPreco() * entry.getValue().getQuantidade();
-                if (valorProdutoEmEstoque > maiorQuantidadeValor) {
-                    maiorQuantidadeValor = valorProdutoEmEstoque;
-                    produtoMaiorQuantidadeValor = entry.getValue();
+                if (valorProdutoEmEstoque > maiorValorTotalProdutoEstoque) {
+                    maiorValorTotalProdutoEstoque = valorProdutoEmEstoque;
+                    produtoMaiorQuantidadeValorEstoque = entry.getValue();
                 }
             }
-            return produtoMaiorQuantidadeValor;
+            return produtoMaiorQuantidadeValorEstoque;
         } else {
             throw new RuntimeException("Estoque Vazio!");
         }
