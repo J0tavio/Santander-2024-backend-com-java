@@ -1,4 +1,4 @@
-package Ordenacao.EstoqueProdutosComPreco;
+package Pesquisa.EstoqueProdutosComPreco;
 
 import java.util.HashMap;
 import java.util.Map;

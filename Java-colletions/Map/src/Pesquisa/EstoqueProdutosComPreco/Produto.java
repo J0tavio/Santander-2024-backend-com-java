@@ -1,4 +1,4 @@
-package Ordenacao.EstoqueProdutosComPreco;
+package Pesquisa.EstoqueProdutosComPreco;
 
 public class Produto {
     private String nome;

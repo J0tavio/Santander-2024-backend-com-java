@@ -1,4 +1,4 @@
-package Ordenacao.ContagemPalavras;
+package Pesquisa.ContagemPalavras;
 
 import java.util.HashMap;
 import java.util.Map;

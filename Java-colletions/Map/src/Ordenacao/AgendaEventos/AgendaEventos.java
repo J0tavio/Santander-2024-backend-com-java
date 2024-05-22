@@ -1,4 +1,4 @@
-package Pesquisa.AgendaEventos;
+package Ordenacao.AgendaEventos;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -12,9 +12,11 @@ public class AgendaEventos {
     }
 
     public void adicionarEvento(LocalDate data, String nome, String atracao) {
+        this.agendaMap.put(data, new Evento(nome, atracao));
     }
 
     public void exibirAgenda() {
+        System.out.println(this.agendaMap);
     }
 
     public void obterProximoEvento() {

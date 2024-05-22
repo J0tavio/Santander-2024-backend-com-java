@@ -1,4 +1,4 @@
-package Pesquisa.AgendaEventos;
+package Ordenacao.AgendaEventos;
 
 public class Evento {
     private String nomeEvento;
@@ -15,5 +15,13 @@ public class Evento {
 
     public String getNomeAtracao() {
         return nomeAtracao;
+    }
+
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "nomeEvento='" + nomeEvento + '\'' +
+                ", nomeAtracao='" + nomeAtracao + '\'' +
+                '}';
     }
 }
