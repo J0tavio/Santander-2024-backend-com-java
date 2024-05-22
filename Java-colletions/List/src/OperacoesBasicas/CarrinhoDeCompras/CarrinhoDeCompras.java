@@ -41,6 +41,7 @@ public class CarrinhoDeCompras {
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 
         carrinhoDeCompras.adicionarItem("peixe", 2, 5);
+        carrinhoDeCompras.adicionarItem("frango", 4, 5);
         carrinhoDeCompras.adicionarItem("peixe", 2, 2);
         carrinhoDeCompras.adicionarItem("Queijo", 4, 2);
         carrinhoDeCompras.adicionarItem("Calango", 4, 7);
