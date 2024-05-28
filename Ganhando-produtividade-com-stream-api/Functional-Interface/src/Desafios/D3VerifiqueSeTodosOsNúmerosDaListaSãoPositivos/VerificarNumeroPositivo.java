@@ -1,4 +1,4 @@
-package Desafios.VerifiqueSeTodosOsNúmerosDaListaSãoPositivos;
+package Desafios.D3VerifiqueSeTodosOsNúmerosDaListaSãoPositivos;
 
 import java.util.Arrays;
 import java.util.List;

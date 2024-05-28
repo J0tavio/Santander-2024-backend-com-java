@@ -1,4 +1,4 @@
-package Desafios.ImprimaASomaDosNúmerosParesDaLista;
+package Desafios.D2ImprimaASomaDosNúmerosParesDaLista;
 
 import java.util.Arrays;
 import java.util.List;

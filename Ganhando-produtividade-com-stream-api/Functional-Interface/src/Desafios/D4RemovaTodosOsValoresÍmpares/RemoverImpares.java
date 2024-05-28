@@ -1,8 +1,7 @@
-package Desafios.RemovaTodosOsValoresÍmpares;
+package Desafios.D4RemovaTodosOsValoresÍmpares;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class RemoverImpares {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Desafios.CalculeAMédiaDosNúmerosMaioresQue5;
+package Desafios.D5CalculeAMédiaDosNúmerosMaioresQue5;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +13,7 @@ public class CalcularMediaAcima5 {
 
         double soma = numeros.stream().filter(n -> n > 5).reduce(0, Integer::sum);
         long contar = numeros.stream().filter(n -> n > 5).count();
-        double media = contar / soma;
+        double media = soma / contar;
 
         System.out.println(media);
 

@@ -1,8 +1,7 @@
-package Desafios.MostreAListaNaOrdemNumérica;
+package Desafios.D1MostreAListaNaOrdemNumérica;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class OrdemNumerica {
     public static void main(String[] args) {
