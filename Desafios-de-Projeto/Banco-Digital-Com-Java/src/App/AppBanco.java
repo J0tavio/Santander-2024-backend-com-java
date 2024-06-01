@@ -2,20 +2,26 @@ package App;
 
 import BancoDigital.Conta;
 import BancoDigital.ContaCorrente;
-import BancoDigital.ContaPoupanca;
 import Cliente.Cliente;
 
 public class AppBanco {
     public static void main(String[] args) {
-        Cliente joao = new Cliente();
-        joao.setNome("João");
-        Conta cc = new ContaCorrente(joao);
-        Conta cp = new ContaPoupanca(joao);
+//        Banco cliente1 = new Banco();
+//        cliente1.adicionarContaCorrente(new Cliente("Joao", "1"));
+        Cliente cliente1 = new Cliente("Joao", "1");
+        Cliente cliente2 = new Cliente("Pedro", "2");
 
-        cc.depositar(500);
-        cc.transferir(100, cp);
+        Conta cc = new ContaCorrente(cliente1);
+        cc.depositar(5000);
 
+
+
+        Conta cc2 = new ContaCorrente(cliente2);
+        cc.transferir(200, cc2);
+        cc2.imprimirExtrato();
         cc.imprimirExtrato();
-        cp.imprimirExtrato();
+
+
+
     }
 }
