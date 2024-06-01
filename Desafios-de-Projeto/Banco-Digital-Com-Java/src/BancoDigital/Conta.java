@@ -2,7 +2,7 @@ package BancoDigital;
 
 import Cliente.Cliente;
 
-public abstract class Conta implements IConta {
+public abstract class Conta {
     private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
 
@@ -30,17 +30,14 @@ public abstract class Conta implements IConta {
         return saldo;
     }
 
-    @Override
     public void sacar(double valor) {
         this.saldo -= valor;
     }
 
-    @Override
     public void depositar(double valor) {
         this.saldo += valor;
     }
 
-    @Override
     public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
@@ -52,4 +49,7 @@ public abstract class Conta implements IConta {
         System.out.println(String.format("Número: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
+
+
+    public abstract void imprimirExtrato();
 }
