@@ -6,21 +6,21 @@ public abstract class Conta {
     private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
 
+
     protected int agencia;
     protected int numero;
     protected double saldo;
-    public Cliente cliente;
 
-    public Conta(Cliente cliente) {
+
+
+    public Conta() {
         this.agencia = AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
-        this.cliente = cliente;
     }
 
     public int getAgencia() {
         return agencia;
     }
-
 
     public int getNumero() {
         return numero;
@@ -29,6 +29,7 @@ public abstract class Conta {
     public double getSaldo() {
         return saldo;
     }
+
 
     public void sacar(double valor) {
         this.saldo -= valor;
@@ -44,12 +45,16 @@ public abstract class Conta {
     }
 
     protected void imprimirInfosComuns() {
-        System.out.println(String.format("Titular: %s", this.cliente.getNome()));
         System.out.println(String.format("Agência: %d", this.agencia));
         System.out.println(String.format("Número: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 
-
-    public abstract void imprimirExtrato();
+    @Override
+    public String toString() {
+        return "Conta " +
+                "agencia: " + agencia +
+                ", numero: " + numero +
+                ", saldo: " + saldo;
+    }
 }

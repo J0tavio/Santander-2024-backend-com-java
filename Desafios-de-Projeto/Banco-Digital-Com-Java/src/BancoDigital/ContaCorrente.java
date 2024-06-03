@@ -3,14 +3,15 @@ package BancoDigital;
 import Cliente.Cliente;
 
 public class ContaCorrente extends Conta {
-
-    public ContaCorrente(Cliente cliente) {
-        super(cliente);
-    }
+    private String nome = "Conta Corrente";
 
     @Override
-    public void imprimirExtrato() {
+    public void imprimirInfosComuns() {
         System.out.println(" ==Extrato Conta Corrente== ");
+        super.imprimirInfosComuns();
+    }
 
+    public String getNome() {
+        return nome;
     }
 }

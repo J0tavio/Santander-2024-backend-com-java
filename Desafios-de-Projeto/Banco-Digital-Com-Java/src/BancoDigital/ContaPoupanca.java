@@ -1,18 +1,15 @@
 package BancoDigital;
 
-import Cliente.Cliente;
-
 public class ContaPoupanca extends Conta {
-
-    public ContaPoupanca(Cliente cliente) {
-        super(cliente);
-    }
+    private String nome = "Conta Poupança";
 
     @Override
-    public void imprimirExtrato() {
+    public void imprimirInfosComuns() {
         System.out.println(" ==Extrato Conta Poupança== ");
-
+        super.imprimirInfosComuns();
     }
 
-
+    public String getNome() {
+        return nome;
+    }
 }
