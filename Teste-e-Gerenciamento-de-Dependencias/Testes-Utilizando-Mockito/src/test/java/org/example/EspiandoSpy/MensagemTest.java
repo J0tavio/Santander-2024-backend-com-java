@@ -1,4 +1,4 @@
-package org.example;
+package org.example.EspiandoSpy;
 
 import org.example.SpyExemplo.EnviarMensagem;
 import org.example.SpyExemplo.Mensagem;

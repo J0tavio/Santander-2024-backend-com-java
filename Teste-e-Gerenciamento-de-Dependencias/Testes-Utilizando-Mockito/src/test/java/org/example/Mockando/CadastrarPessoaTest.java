@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Mockando;
 
 import org.example.MockExemplo.ApiCorreios;
 import org.example.MockExemplo.CadastrarPessoa;
