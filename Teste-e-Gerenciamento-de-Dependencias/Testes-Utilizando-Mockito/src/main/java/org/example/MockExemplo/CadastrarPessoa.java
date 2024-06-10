@@ -1,4 +1,4 @@
-package org.example;
+package org.example.MockExemplo;
 
 import java.time.LocalDate;
 

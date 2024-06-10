@@ -1,4 +1,4 @@
-package org.example;
+package org.example.MockExemplo;
 
 public class DadosLocalizacao {
     private String uf;

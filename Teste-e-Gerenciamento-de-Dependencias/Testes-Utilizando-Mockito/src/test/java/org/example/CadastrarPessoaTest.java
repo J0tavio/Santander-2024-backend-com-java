@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.MockExemplo.ApiCorreios;
+import org.example.MockExemplo.CadastrarPessoa;
+import org.example.MockExemplo.DadosLocalizacao;
+import org.example.MockExemplo.Pessoa;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
