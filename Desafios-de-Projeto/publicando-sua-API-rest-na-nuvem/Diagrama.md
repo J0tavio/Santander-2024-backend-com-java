@@ -4,37 +4,39 @@ Java Restiful API
 ## Diagrama de Classes 
  
  ```mermaid
-
 classDiagram
+  class User {
+    -String name
+    -Account account
+    -Feature[] features
+    -Card card
+    -News[] news
+  }
 
-class User {
-  name: string
-}
+  class Account {
+    -String number
+    -String agency
+    -Number balance
+    -Number limit
+  }
 
-class Account {
-  number: string
-  agency: string
-  balance: float
-  limit: float
-}
+  class Feature {
+    -String icon
+    -String description
+  }
 
-class Feature {
-  icon: string
-  description: string
-}
+  class Card {
+    -String number
+    -Number limit
+  }
 
-class Card {
-  number: string
-  limit: float
-}
+  class News {
+    -String icon
+    -String description
+  }
 
-class News {
-  newsIcon: string
-  description: string
-}
-
-User "1" *-- "1" Account
-User "1" *-- "*" Feature
-User "1" *-- "1" Card
-User "1" *-- "*" News
+  User "1" *-- "1" Account
+  User "1" *-- "N" Feature
+  User "1" *-- "1" Card
+  User "1" *-- "N" News
 ```
