@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>me.dio</groupId>
-	<artifactId>santander-dev-week-2024</artifactId>
+	<artifactId>santander-bootcamp-2024</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>santander-dev-week-2024</name>
 	<description>Demo project for Spring Boot</description>
